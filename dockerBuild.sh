@@ -1,1 +1,1 @@
-docker build -t hwengmgr/vertcoinOSXbuild .
+docker build -t hwengmgr/vertcoinmacbuild .

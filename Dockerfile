@@ -6,7 +6,7 @@ RUN apt-get -y install apt-utils software-properties-common
 RUN add-apt-repository -y ppa:bitcoin/bitcoin
 RUN apt-get update
 RUN apt-get -y install libdb4.8-dev libdb4.8++-dev
+RUN pip install ez_setup
 RUN mkdir -p proj && cd proj
-RUN mkdir -p vertcoin-core && cd vertcoin-core
-WORKDIR /proj/vertcoin-core
-COPY build-MacOSX-only.sh /proj/vertcoin-core
+WORKDIR /proj
+COPY build-MacOSX-only.sh /proj

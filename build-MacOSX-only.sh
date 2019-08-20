@@ -14,7 +14,7 @@ make -j8 -C depends HOST=$HOST
 mkdir -p $WORKSPACE/out/$HOST
 ./autogen.sh
 #mkdir build && cd build
-./configure --disable-tests  --with-libs-no --prefix=$WORKSPACE/depends/$HOST --bindir=$WORKSPACE/out/$HOST/bin --libdir=$WORKSPACE/out/$HOST/lib 
+./configure --disable-tests  --with-libs=no --prefix=$WORKSPACE/depends/$HOST --bindir=$WORKSPACE/out/$HOST/bin --libdir=$WORKSPACE/out/$HOST/lib 
 make -j8 install
 #cd ../
 #rm -rf build
